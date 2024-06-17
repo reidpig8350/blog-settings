@@ -20,7 +20,7 @@ tags:
 type: "featured"
 ---
 
-在 macOS 系統中，bash 和 git 原生兼容，但 Windows 使用者需自行安裝和設定 git。對 git 需求較少的使用者，Github Desktop 可能足夠，但有程式需求的使用者應避免使用。本文介紹在 Windows 下使用 PowerShell 設定 git 環境，包含下載、安裝 git 以及配置環境變數的步驟，使得在任何 Shell 中使用 git 成為可能。
+macOS 系統原生支援 bash 和 git，但 Windows 使用者需要自行安裝和設定 git。Windows 使用者使用 PowerShell 設定 git 環境，包含下載、安裝和配置環境變數。
 <!--more-->
 
 
