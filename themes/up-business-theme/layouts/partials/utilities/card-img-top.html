@@ -1,3 +1,6 @@
-{{ with resources.Get . }}
-  <img class="" src="{{ .Permalink }}" alt="{{ .Title }}" width="{{ .Width }}" height="{{ .Height }}">
+{{ $image := resources.Get .URL }}
+{{ if $image }}
+  <img class="" src="{{ $image.Permalink }}" alt="{{ .Title }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+{{ else }}
+  <img class="" src="{{ .URL }}" alt="{{ .Title }}">
 {{ end }}

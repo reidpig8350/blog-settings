@@ -13,7 +13,7 @@ categories = [
 ]
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
-images = ["/images/ga4-blue.jpeg"]
+images = ["/images/ga4-blue.jpeg", "/images/hero-image.png"]
 
 +++
 

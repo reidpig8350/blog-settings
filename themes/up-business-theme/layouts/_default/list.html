@@ -16,8 +16,11 @@
         <div class="col-12 col-md-6 col-lg-4">
           <a class="card text-decoration-none h-100" href="{{ .Permalink }}">
             <div class="aspect-ratio-62-5">
-              {{ with ( partial "utilities/get-featured-image.html" . ) }}
-                {{ partial "utilities/card-img-top" . }}
+              {{ $featuredImage := partial "utilities/get-featured-image.html" . }}
+              {{ if $featuredImage }}
+                {{ partial "utilities/card-img-top" (dict "URL" $featuredImage "Title" "Featured Image") }}
+              {{ else }}
+                <p>No featured image found.</p>
               {{ end }}
             </div>
             <div class="card-body">
